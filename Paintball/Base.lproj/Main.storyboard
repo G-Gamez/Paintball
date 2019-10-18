@@ -39,10 +39,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySn-UD-I6d">
-                                <rect key="frame" x="126" y="494" width="161" height="211"/>
+                                <rect key="frame" x="100" y="494" width="213" height="211"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <state key="normal" title="Menu">
+                                <state key="normal" title="Main Menu">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
@@ -131,42 +131,58 @@
             </objects>
             <point key="canvasLocation" x="954" y="88"/>
         </scene>
-        <!--View Controller-->
+        <!--Equipment-->
         <scene sceneID="pXN-zR-67j">
             <objects>
-                <viewController id="pbT-3D-fWx" sceneMemberID="viewController">
+                <viewController title="Equipment" id="pbT-3D-fWx" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zNP-H3-SSH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Padding" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="evh-zS-1im">
-                                <rect key="frame" x="87" y="244" width="240" height="46"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ts-mw-UBc">
+                                <rect key="frame" x="128" y="120" width="155" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Mask" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GZe-EA-cVs">
-                                <rect key="frame" x="87" y="384" width="240" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <state key="normal" title="Markers">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="nVb-Po-HWK" kind="show" id="UDD-kB-miV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylx-hi-ou1">
+                                <rect key="frame" x="129" y="315" width="157" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Padding" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UGG-vP-EGc">
-                                <rect key="frame" x="87" y="528" width="240" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <state key="normal" title="Padding">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="V3v-Ei-5XL" kind="show" id="iJk-IY-FcU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qx3-cK-mM1">
+                                <rect key="frame" x="155" y="755" width="104" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Markers" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CyG-5h-vN2">
-                                <rect key="frame" x="87" y="111" width="240" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <state key="normal" title="Mask">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wZa-ez-6Hi" kind="show" id="MMQ-5h-hVI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUF-ti-jw3">
+                                <rect key="frame" x="121" y="547" width="172" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <state key="normal" title="Appearel">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JCe-P9-sXV" kind="show" id="PAg-VT-oTS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Sfz-1h-nkn"/>
@@ -226,22 +242,22 @@
             </objects>
             <point key="canvasLocation" x="138" y="843"/>
         </scene>
-        <!--View Controller-->
+        <!--Recball-->
         <scene sceneID="gM5-rI-ap7">
             <objects>
-                <viewController id="0Tb-dU-7Ss" sceneMemberID="viewController">
+                <viewController title="Recball" id="0Tb-dU-7Ss" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jlw-Ar-VlM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Field rental plus all day air can be 20-24$. If you have your own equipment it will be 18-18$ with all day air." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fx1-uY-3gD">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Field rental plus all day air can be 20-24$. If you have your own equipment it will be 18-18$ with all day air." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fx1-uY-3gD">
                                 <rect key="frame" x="87" y="88" width="240" height="193"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="500 rounds can cost 20-25$ depending on which field you go to. A box of 2000 can cost anywhere from 65-80$ " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jUg-Ie-Equ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="500 rounds can cost 20-25$ depending on which field you go to. A box of 2000 can cost anywhere from 65-80$ " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jUg-Ie-Equ">
                                 <rect key="frame" x="87" y="274" width="240" height="194"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -257,22 +273,22 @@
             </objects>
             <point key="canvasLocation" x="-588.40579710144937" y="1514.7321428571429"/>
         </scene>
-        <!--View Controller-->
+        <!--Jobs-->
         <scene sceneID="zEa-U0-CY2">
             <objects>
-                <viewController id="0aY-G3-dfC" sceneMemberID="viewController">
+                <viewController title="Jobs" id="0aY-G3-dfC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PXk-on-Co4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="For in depth detail of payments for team leader, ref, customer service representative etc click following link." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xjC-Ku-Fz1">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="For in depth detail of payments for team leader, ref, customer service representative etc click following link." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xjC-Ku-Fz1">
                                 <rect key="frame" x="87" y="88" width="240" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="https://www.indeed.com/jobs?q=Paintball&amp;aceid=&amp;gclid=EAIaIQobChMI1a-Hsena5AIVw8DACh2C0QllEAAYASAAEgIh1vD_BwE" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7oc-wl-HC9">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="https://www.indeed.com/jobs?q=Paintball&amp;aceid=&amp;gclid=EAIaIQobChMI1a-Hsena5AIVw8DACh2C0QllEAAYASAAEgIh1vD_BwE" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7oc-wl-HC9">
                                 <rect key="frame" x="87" y="298" width="240" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -288,36 +304,36 @@
             </objects>
             <point key="canvasLocation" x="215.94202898550725" y="1524.7767857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Field Tyoes-->
         <scene sceneID="Nqo-kX-TeQ">
             <objects>
-                <viewController id="NuG-MV-sGf" sceneMemberID="viewController">
+                <viewController title="Field Tyoes" id="NuG-MV-sGf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2FY-ou-Dxg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="The most common field players play on is called the speedball or “airball”. This is what most tournaments use. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oQn-Dp-RQB">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="The most common field players play on is called the speedball or “airball”. This is what most tournaments use. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oQn-Dp-RQB">
                                 <rect key="frame" x="20" y="118" width="374" height="131"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="An outlaw field is a field with black tube like barriers. Most fields will have these." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nFx-qR-APQ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="An outlaw field is a field with black tube like barriers. Most fields will have these." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nFx-qR-APQ">
                                 <rect key="frame" x="20" y="472" width="374" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Another common field is Urban Warfare, these will have many structures.   " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xbr-tT-Yee">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Another common field is Urban Warfare, these will have many structures.   " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xbr-tT-Yee">
                                 <rect key="frame" x="20" y="675" width="374" height="106"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="A woodsball field consist of more natural feel. These will have trees ands brush. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ref-eA-AZt">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="A woodsball field consist of more natural feel. These will have trees ands brush. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ref-eA-AZt">
                                 <rect key="frame" x="20" y="301" width="374" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -341,7 +357,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HAx-4N-9cf">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HAx-4N-9cf">
                                 <rect key="frame" x="87" y="88" width="240" height="228"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -349,7 +365,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="If you just want to play every weekend you can play recball, with others including rentals. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Mna-uy-3Vg">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="If you just want to play every weekend you can play recball, with others including rentals. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Mna-uy-3Vg">
                                 <rect key="frame" x="87" y="701" width="240" height="161"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -364,7 +380,7 @@
                                 <rect key="frame" x="87" y="534" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Or" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BR8-LE-Lin">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Or" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BR8-LE-Lin">
                                 <rect key="frame" x="155" y="458" width="104" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -388,28 +404,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="#1 Rule is to KEEP your mask on in field at all times no matter what. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vHC-64-eR9">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="#1 Rule is to KEEP your mask on in field at all times no matter what. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vHC-64-eR9">
                                 <rect key="frame" x="87" y="88" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="#2 Keep barrel covers when off the field at all times. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XTM-X6-XVl">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="#2 Keep barrel covers when off the field at all times. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XTM-X6-XVl">
                                 <rect key="frame" x="87" y="384" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="#3 Some fields have a 10-20 feet “Surrender” rule." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Yqw-22-pLP">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="#3 Some fields have a 10-20 feet “Surrender” rule." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Yqw-22-pLP">
                                 <rect key="frame" x="87" y="566" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OwN-re-Kok">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OwN-re-Kok">
                                 <rect key="frame" x="87" y="686" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -417,8 +433,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Y4-Dw-0B4">
-                                <rect key="frame" x="87" y="211" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Y4-Dw-0B4">
+                                <rect key="frame" x="87" y="211" width="240" height="113"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Most paintball fields will kick you off the field for the rest of the day if you are caught doing so. A paintball to an eye is like a sledge hammer to a grape. </string>
@@ -432,17 +448,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OtD-Rl-pcR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="954" y="-626"/>
+            <point key="canvasLocation" x="953.62318840579712" y="-626.11607142857144"/>
         </scene>
-        <!--View Controller-->
+        <!--Parties-->
         <scene sceneID="qUW-MM-o2b">
             <objects>
-                <viewController id="WjH-mO-KEt" sceneMemberID="viewController">
+                <viewController title="Parties" id="WjH-mO-KEt" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G52-mN-fSc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Mlm-uN-wwN">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Mlm-uN-wwN">
                                 <rect key="frame" x="87" y="88" width="240" height="369"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -450,7 +466,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Everyone gets free refills, a tank, marker, and mask. Some offer a vest and pouches. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ly8-cb-Adu">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Everyone gets free refills, a tank, marker, and mask. Some offer a vest and pouches. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ly8-cb-Adu">
                                 <rect key="frame" x="87" y="452" width="240" height="168"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -466,9 +482,148 @@
             </objects>
             <point key="canvasLocation" x="-588.40579710144937" y="841.74107142857144"/>
         </scene>
+        <!--Padding-->
+        <scene sceneID="ktJ-CM-Jut">
+            <objects>
+                <viewController title="Padding" id="V3v-Ei-5XL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oql-JT-N8z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Knee and Elbow Padding can cost 30-80$ depending who you buy from. The more high end pads would be from dye and hk army. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1id-1b-LNB">
+                                <rect key="frame" x="87" y="88" width="240" height="225"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cCG-PF-JbR">
+                                <rect key="frame" x="87" y="306" width="240" height="285"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">For more info about padding click following link: https://www.ansgear.com/SearchResults.asp?searching=Y&amp;sort=5&amp;search=padding&amp;show=24&amp;page=2</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="iN4-JO-mOn">
+                                <rect key="frame" x="87" y="582" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="opd-Di-eZJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mlm-5b-Gnv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3547.826086956522" y="87.723214285714278"/>
+        </scene>
+        <!--Appearel -->
+        <scene sceneID="UiX-fp-gXF">
+            <objects>
+                <viewController title="Appearel " id="JCe-P9-sXV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VcU-bN-3sR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="by1-h5-sE0">
+                                <rect key="frame" x="87" y="88" width="240" height="332.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Many different brands have jerseys, a select few offer pants with or without padding. Jerseys can cost 25-130$ depending who desings and if its a team jersey. Pants can cost 30-225$.  </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="71fDmPnCZ9L._SY355_" translatesAutoresizingMaskIntoConstraints="NO" id="m48-O8-L9A">
+                                <rect key="frame" x="71" y="408" width="272" height="217"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images-2" highlightedImage="pasted-image-small-1645" translatesAutoresizingMaskIntoConstraints="NO" id="sdG-Wv-B2W">
+                                <rect key="frame" x="71" y="629" width="272" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="87j-DQ-ed5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4qX-mZ-v4b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4379.7101449275369" y="87.723214285714278"/>
+        </scene>
+        <!--Markers-->
+        <scene sceneID="B5A-CZ-YyD">
+            <objects>
+                <viewController title="Markers" id="nVb-Po-HWK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hbe-CM-3Ff">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="They range from 200-2000$" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qcd-Ia-MkL">
+                                <rect key="frame" x="111" y="88" width="193" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Hbr-iU-i03">
+                                <rect key="frame" x="87" y="155" width="240" height="406"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">The top ten most popular brands are (no specific order) Empire, Bob Long,Luxe, Dye, First Strike, JT, G.I. Sports, Planet Eclipes, Tippman, and Valken. Click Link to Explore more: https://www.ansgear.com/Paintball_Guns_s/1.htm</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="maxresdefault" translatesAutoresizingMaskIntoConstraints="NO" id="cRg-c9-17T">
+                                <rect key="frame" x="69" y="553" width="276" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="NLO-ta-Gv3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="85I-AO-z7Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2711.594202898551" y="87.723214285714278"/>
+        </scene>
+        <!--Mask-->
+        <scene sceneID="Icc-1A-3Tg">
+            <objects>
+                <viewController title="Mask" id="wZa-ez-6Hi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dcD-kW-Lxc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XxO-Yk-wNW">
+                                <rect key="frame" x="87" y="88" width="240" height="588"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Most Commonly known mask will be from JT, Dye, Empire, Virtue, HK Army KLR, Planet Eclipes, VForce and First Strike Push Unite. There is also many different accesories such as cases goggles, upgrade parts, camera mounts and straps. Some retailers also offer helmets. Starter mask range from 20-40$ while entry level range from 80-220$</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images-3" translatesAutoresizingMaskIntoConstraints="NO" id="aag-hG-UMF">
+                                <rect key="frame" x="53" y="670" width="308" height="192"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ZLy-Gj-a49"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gyn-72-veG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5185.507246376812" y="87.723214285714278"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="71fDmPnCZ9L._SY355_" width="355" height="355"/>
         <image name="c700x420" width="700" height="420"/>
+        <image name="images" width="300" height="168"/>
+        <image name="images-2" width="211" height="239"/>
+        <image name="images-3" width="225" height="225"/>
+        <image name="maxresdefault" width="1280" height="720"/>
         <image name="pasted-image-small-1645" width="256" height="137"/>
     </resources>
 </document>
